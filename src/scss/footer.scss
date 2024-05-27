@@ -45,13 +45,15 @@
     gap: toRem(3);
 
 }
-.footer__copyrights {
+.dev__link{
+    // color: red;
+    text-decoration: underline;
 }
 .footer__copy {
     font-size: toRem(14);
     font-weight: 400;
     letter-spacing: toRem(1);
-    line-height: 120%;
+    line-height: 150%;
     text-align: center;
     color: #838181;
 }

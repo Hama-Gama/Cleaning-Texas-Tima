@@ -10,7 +10,7 @@
 	&._header-scroll{
 		position: fixed;
 		top: -200%;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: #000;
 	}
 	&._header-show{
 		transition: top 0.3s ease 0s;
@@ -35,16 +35,19 @@
 	letter-spacing: 1px;
 	font-size: toRem(20);
 	color: #FFF;
+	padding: toRem(10);
 }
 
 ._icon-phone-circle {
 	display: flex;
 	flex: 1 1 auto;
+	justify-content: center;
+	// width: 100%;
 	color: #FFF;
 	letter-spacing: toRem(2);
 	font-size: toRem(16);
 	// background-color: gray;
-	padding: toRem(5) toRem(10);
+	padding: toRem(5);
 	gap: toRem(5);
 	transition: all 0.8s ease 0s;
 	&:hover {
@@ -55,14 +58,17 @@
 	}
 }
 .location{
-	color: #FFF;
+	color: #fff;
 	display: flex;
+	justify-content: center;
 	text-align: center;
 	flex: 1 1 auto;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: toRem(2);
-	font-size: toRem(18);
+	font-size: toRem(16);
 	gap: toRem(3);
+	padding: toRem(0) toRem(15);
+	// background-color: gray;
 }
 
 .menu__body {
@@ -99,7 +105,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	row-gap: toRem(5);
-	@include adaptiveValue("column-gap", 50, 20);
+	@include adaptiveValue("column-gap", 30, 20);
 	@media (max-width:$mobile){
 		 text-align: center;
 		 flex-direction: column;
