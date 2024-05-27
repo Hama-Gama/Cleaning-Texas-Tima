@@ -1,0 +1,73 @@
+//====================================================================================================
+.footer {
+    background-color: #000;
+    color: #fff;
+    // margin-bottom: toRem(68);
+    padding: toRem(30) toRem(0) toRem(98);
+}
+.footer__container {
+}
+.footer__body {
+}
+.footer__company-name{
+    font-weight: 400;
+    font-size: toRem(14);
+    font-weight: 400;
+    letter-spacing: toRem(1);
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: toRem(5);
+}
+.footer__company-subtitle{
+    margin-bottom: toRem(15);
+    font-size: toRem(14);
+    font-weight: 400;
+}
+._icon-location {
+    display: flex;
+    justify-content: center;
+}
+.button {
+}
+._icon-phone-square {
+    display: flex;
+    justify-content: center;
+    font-size: toRem(16);
+    letter-spacing: toRem(2);
+    gap: toRem(3);
+    margin-bottom: toRem(15);
+}
+._icon-email {
+    display: flex;
+    justify-content: center;
+    font-size: toRem(16);
+    letter-spacing: toRem(2);
+    gap: toRem(3);
+
+}
+.footer__copyrights {
+}
+.footer__copy {
+    font-size: toRem(14);
+    font-weight: 400;
+    letter-spacing: toRem(1);
+    line-height: 120%;
+    text-align: center;
+    color: #838181;
+}
+
+address{
+    font-family: $fontFamily;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: toRem(30);
+    font-size: toRem(14);
+    letter-spacing: toRem(2);
+    font-weight: 400;
+    line-height: 120%;
+    color: #b6b3b3;
+}
+address p{
+    margin-bottom: toRem(15);
+}
+//====================================================================================================
