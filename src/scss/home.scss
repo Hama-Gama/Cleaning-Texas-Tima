@@ -7,10 +7,34 @@
 }
 
 //====================================================================================================
-.about__title {
-    font-size: toRem(20);
+.about__head img{
+    // background-color: gray;
+    display: block;
+    margin: 0 auto;
+    padding: toRem(5);
+}
+
+.about__logo{
+    // background-color: gray;
+    width: toRem(60);
+    margin-right: toRem(200);
+}
+
+.about__title{
+    @include adaptiveValue("font-size", 25, 18);
+    // font-size: toRem(40);
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: toRem(2);
+    line-height: 150%;
+    text-align: center;
+    @include adaptiveValue("margin-bottom", 10, 5);
+    color: #615EFC;
+    // background-color: gray;
+}
+.about__subtitle {
+    font-size: toRem(16);
+    font-weight: 500;
     letter-spacing: toRem(2);
     line-height: 120%;
     text-align: center;
@@ -148,127 +172,6 @@
 }
 
 // testimonials ========================================================================================================================================================
-// .testimonials {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     // background-color: gray;
-//     margin-bottom: toRem(50);
-// }
-
-// .__container-t {
-//     // background-color: gray;
-//     max-width: toRem(1100);
-//     width: 100%;
-//     padding: toRem(0) toRem(30);
-//     margin: 0 auto;
-// }
-// .testi {
-//     max-width: toRem(900);
-//     margin: 0 auto;
-// }
-// .testi__head {
-//     text-align: center;
-//     margin-bottom: toRem(40);
-// }
-// .testi__title {
-// }
-// ._title {
-// }
-// .testi__body {
-// }
-// .testi__wrapper {
-//     // background-color: lightblue;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: toRem(60);
-//     padding: toRem(30) 0;
-//     @media (min-width:$mobile){
-//          flex-direction: row; 
-//          padding: toRem(30) toRem(100);
-//     }
-// }
-// .testi__thumbnail {
-//     width: 150px;
-//     height: 150px;
-//     position: relative;
-//     flex-shrink: 0;
-//     @media (min-width:$mobile){
-//          width: toRem(200);
-//          height: toRem(200); 
-//     }
-//     &::before{
-//         content: '';
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-//         width: calc(100% + 30px);
-//         height: calc(100% + 10px);
-//         background-color: blue;
-//         border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
-//         z-index: -1;
-//         -webkit-box-shadow: -1px -1px 12px -3px rgba(0,0,0,0.75);
-//         -moz-box-shadow: -1px -1px 12px -3px rgba(0,0,0,0.75);
-//         box-shadow: -1px -1px 12px -3px rgba(0,0,0,0.75);
-//     }
-// }
-// .testi__thumbnail img{
-//     object-fit: cover;
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 50%;
-// }
-// .testi__aside {
-//     // position: relative;
-//     padding-top: toRem(15);
-//     display: flex;
-//     flex-direction: column;
-//     align-self: flex-end;
-
-// }
-// .testi__text{
-//     position: relative;
-//     font-size: toRem(14);
-//     line-height: normal;
-//     margin-bottom: toRem(30);
-//     padding: toRem(15);
-//     &::before,
-//     &::after{
-//         font-family: serif;
-//         font-size: toRem(70);
-//         font-weight: 800;
-//         line-height: 1;
-//         position: absolute;
-//         color: rgb(218, 203, 198);
-//         height: toRem(40);
-//         z-index: -1;
-//     }
-// }
-// .testi__text::before{
-//     content: open-quote;
-//     top: toRem(-40);
-//     left: toRem(10);
-// }
-// .testi__text::after{
-//     content: close-quote;
-//     right: 0;
-//     top: toRem(80);
-// }
-// .testi__author {
-//     position: relative;
-//     width: fit-content;
-//     line-height: 1;
-// }
-
-// .testi__name{
-//     font-size: toRem(18);
-//     font-weight: 800;
-//     color: #000;
-//     opacity: .6;
-// }
-
-
 .testimonials {
     // background-color: gray;
 }
@@ -328,33 +231,6 @@
     color: #535353;
     position: relative;
 }
-
-// .testi__quote::before,
-// .testi__quote::after {
-//     font-family: serif;
-//     font-size: toRem(50);
-//     font-weight: 800;
-//     line-height: 1;
-//     position: absolute;
-//     color: rgb(218, 203, 198);
-//     height: toRem(40);
-//     z-index: -1;
-//  }
-
-// .testi__quote::before{
-//     content: open-quote;
-//     top: toRem(-15);
-//     left: toRem(10);
-// }
-// .testi__quote::after{
-//     content: close-quote;
-//     right: toRem(20);
-//     top: toRem(90);
-//     @media (max-width:$tablet){
-//         top: toRem(70);
-//     }
-// }
-
 
 .testi__client-name {
     font-size: toRem(18);

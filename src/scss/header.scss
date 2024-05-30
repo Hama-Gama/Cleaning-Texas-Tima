@@ -31,16 +31,17 @@
 	// background-color: red;
 }
 .header__logo {
-	flex: 1 1 auto;
 	letter-spacing: 1px;
-	font-size: toRem(20);
+	font-size: toRem(30);
 	color: #FFF;
-	padding: toRem(10);
+	padding: toRem(0) toRem(5);
+	// background-color: gray;
+	@include adaptiveValue("margin-right", 50, 15);
 }
 
 ._icon-phone-circle {
 	display: flex;
-	flex: 1 1 auto;
+	// flex: 1 1 auto;
 	justify-content: center;
 	// width: 100%;
 	color: #FFF;
@@ -70,6 +71,7 @@
 	padding: toRem(0) toRem(15);
 	// background-color: gray;
 }
+
 
 .menu__body {
 	@media (max-width:$mobile){
