@@ -22,6 +22,9 @@ ScrollReveal({
     reset: true,
 });
 
-ScrollReveal().reveal(`.locations, .about, .main__slide,`, {origin: 'right'})
-ScrollReveal().reveal(`.contacts, .testi__slide,`, {origin: 'left'})
+// ScrollReveal().reveal(`.locations, .about, .main__slide,`, {origin: 'right'})
 ScrollReveal().reveal(`.service__item`,  {interval: 100})
+ScrollReveal().reveal(`.location__column`,  {interval: 50})
+ScrollReveal().reveal(`.testi__slider`,  {interval: 100})
+ScrollReveal().reveal(`.main__slider`,  {interval: 100})
+ScrollReveal().reveal(`.about__content`,  {interval: 100})
