@@ -1,4 +1,4 @@
-// Импорт основного модуля
+// Импорт основного модуля 222
 import gulp from "gulp";
 // Импорт общих плагинов
 import { plugins } from "./config/gulp-plugins.js";
